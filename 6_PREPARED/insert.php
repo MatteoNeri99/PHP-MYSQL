@@ -21,7 +21,7 @@ $sql = "INSERT INTO persone (nome, cognome, email) VALUES (?, ?, ?)";
 
 
 // preparo la query da inviare con il metodo prepare
-if($statement= $connessione->prepare($sql)){
+if($statement = $connessione->prepare($sql)){
 
     // vado a cambiare i punti di domanda con i dati da inserire (il primo valore è il tipo di dato cha va inserito quindi in questo caso 3 stringhe e quindi 'sss')
     $statement->bind_param('sss', $nome, $cognome, $email);
