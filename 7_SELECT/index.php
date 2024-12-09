@@ -65,11 +65,6 @@ if($results= $connessione->query($sql)){
 
 
 
-
-
-
-
-
 // termino la connessione con il db
 $connessione->close();
 
